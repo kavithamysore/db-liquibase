@@ -1,0 +1,1 @@
+CREATE TABLE departments (dept_no CHAR(4) NOT NULL, dept_name VARCHAR(40) NOT NULL, CONSTRAINT PK_DEPARTMENTS PRIMARY KEY (dept_no), UNIQUE (dept_name));

@@ -1,0 +1,33 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="kavitha (generated)" id="departements-1">
+        <sqlFile path="db/changelog/tables/departements.sql" endDelimiter="go"/>
+        <rollback>
+            <dropTable tableName="departements"/>
+        </rollback>
+    </changeSet>
+    <changeSet author="kavitha (generated)" id="dept_emp-1">
+        <sqlFile path="db/changelog/tables/dept_emp.sql" endDelimiter="go"/>
+        <rollback>
+            <dropTable tableName="dept_emp"/>
+        </rollback>
+    </changeSet>
+    <changeSet author="kavitha (generated)" id="employees-1">
+        <sqlFile path="db/changelog/tables/employees.sql" endDelimiter="go"/>
+        <rollback>
+            <dropTable tableName="employees"/>
+        </rollback>
+    </changeSet>
+    <changeSet author="kavitha (generated)" id="salaries-1">
+        <sqlFile path="db/changelog/tables/salaries.sql" endDelimiter="go"/>
+        <rollback>
+            <dropTable tableName="salaries"/>
+        </rollback>
+    </changeSet>
+    <changeSet author="kavitha (generated)" id="titles-1">
+        <sqlFile path="db/changelog/tables/titles.sql" endDelimiter="go"/>
+        <rollback>
+            <dropTable tableName="titles"/>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>
