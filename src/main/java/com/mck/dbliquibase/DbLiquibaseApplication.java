@@ -9,5 +9,5 @@ public class DbLiquibaseApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DbLiquibaseApplication.class, args);
 	}
-
+//
 }
